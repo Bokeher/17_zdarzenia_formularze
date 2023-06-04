@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '17_zdarzenia_formularze_rychter_szymon';
+
+  imie: string = "";
+  status: string = "";
+  ocena: number = 0;
+  submit() {
+    console.log(`${this.imie} ${this.ocena} ${this.status}`);
+  }
 }
